@@ -1,0 +1,82 @@
+
+Threee tool Determine Center
+
+Mean - Average 
+
+Median - middle point (half number of left might be smaller and right side might be larger 
+
+Mode - Most Common number in data set
+
+
+
+Variabilty
+
+Mean
+
+Median
+
+Range
+
+
+Calculating Standard Deviation
+
+
+Formula = SquareRoot(  (Sigma(xi - xb)powerto2)/N-1   )
+
+Data Set
+2
+8
+10
+12
+
+Mean = Xb = 8
+Sample Size = N = 4
+
+SD = SquareRoot ((Sigma(xi-8)powerto2)/4-1)  --> Expand to -->   SquareRoot (((2-8)pto2 + (8-8)pto2 + (10-8)pto2 + (12-8)pto2)/4-1) 
+  = SquareRoot(18.7) = 4.32
+
+
+Standard Deviation
+
+
+Data Set 
+
+95
+105
+112
+116
+133
+148
+155
+156
+231
+
+Mean - 139
+Media - 133
+Standard Deviation - 41
+
+Z Score
+A data point's distance , in standard deviation ,from the mean
+
+Z Score = (Xi -Xb)/S
+
+Xi = data point
+xb = mean
+S = Standard deviation
+
+
+Z Score = (Xi -Xb)/S = (231 - 139)/41 = 2.24  This means 231 is 2.24 standard deviation from mean in the positive direction
+
+Z Score = (Xi -Xb)/S = (112 - 139)/41 = -0.66  This means 112 is 0.66 standard deviation from mean in the negative direction (112 is close to our data point)
+
+800 - 575/75
+
+Empirical Rule
+
+Most of the data point in a given data set fall within 3 standard deviation of the mean
+
+
+OutLiner
+
+A data point that is an abnormal distance from the other values in the data set
+
