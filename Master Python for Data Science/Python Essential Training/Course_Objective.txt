@@ -1,0 +1,13 @@
+Learning objectives
+	Python anatomy
+	Types and values
+	Conditionals and operators
+	Building loops
+	Defining functions
+	Python data structures lists, tuples, sets, and more
+	Creating classes
+	Handling exceptions
+	Working with strings
+	File inputoutput (IO)
+	Creating modules
+	Integrating a database with Python db-api

@@ -1,0 +1,9 @@
+Learning objectives
+	Describe the characteristics of different data types and the work of data scientists.
+	Describe different data serialization formats and explain how to use them in Python.
+	Define APIs and explain how to use them with Python to make http calls, interpret JSON, and utilize message queues.
+	Explain what web scraping is and describe ways to do it.
+	Define what a schema is and describe characteristics of schemas and how they influence operations.
+	Describe the characteristics of different types of databases.
+	Categorize types of errors and explain how to correct them.
+	Explain design criteria for data systems and describe how to monitor performance using KPIs.
