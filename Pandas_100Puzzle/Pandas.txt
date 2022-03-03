@@ -1,0 +1,34 @@
+7. Select just the 'animal' and 'age' columns from the DataFrame df. (select any particular column)
+	df[['animal','age']]
+	
+8. Select the data in rows [3, 4, 8] and in columns ['animal', 'age'].
+	df[['animal','age']].iloc[[3,4,8]]
+
+	df.loc[df.index[[3,4,8]],['animal','age']]
+	
+9.Select only the rows where the number of visits is greater than 3.
+	df[df['visits'] >1]
+
+10. Select the rows where the age is missing, i.e. it is NaN. (selecy only null value)
+	df[df['age'].isnull()]
+	
+11. Select the rows where the animal is a cat and the age is less than 3. (select row on more than 1 condition)
+	df.loc[(df['animal'] == 'cat') & (df['age'] < 3)] 
+
+	df[(df['animal'] == 'cat') & (df['age'] < 3)] 
+	
+12. select row between 2 condition
+	df[df['age'].between(2,4)]
+	
+17. Count the number of each type of animal in df. (count number of unique item in column)
+	df['animal'].value_counts()
+	
+18. mulitple sorting  - Sort `df` first by the values in the 'age' in *decending* order, then by the value in the 'visits' column in *ascending* order (so row `i` should be first, and row `d` should be last).
+	df.sort_values(by=['age', 'visits'], ascending=[False, True])
+	
+19. The 'priority' column contains the values 'yes' and 'no'. Replace this column with a column of boolean values: 'yes' should be True and 'no' should be False. (Find and replace kind of things)
+	df['priority'] = df['priority'].map({'yes': True, 'no': False})
+
+20. In the 'animal' column, change the 'snake' entries to 'python'.(Find and replace kind of things)
+	df['animal'] = df['animal'].replace('snake','python')
+	
