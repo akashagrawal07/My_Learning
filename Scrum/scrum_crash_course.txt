@@ -1,0 +1,26 @@
+1. Product Owner
+2. Scrum Master 
+3. Developer
+
+
+
+The Sprint  - It is timebox lasting from 1-2 weeks
+
+Sprint Planning - PO share highest priority items
+
+Daily Scrum - Daily status
+
+Sprint Review - 
+	Team demonstrate is how much is completed in sprint --> get Feedback from PO
+	
+Sprint Retrospective -
+	
+
+Scrum Artifacts
+
+	Product Backlog - This is simply an ordered , or Prioritized list of all work that could be done for this product
+	
+	Sprint Back log - subset of Product Backlog
+	
+	Increment - create each sprint , compelted in current and past sprint
+	
