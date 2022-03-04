@@ -1,0 +1,10 @@
+Why use Python for data science
+Machine learning 101
+Linear regression
+Logistic regression
+Clustering models: K-means and hierarchal models
+Dimension reduction methods
+Association rules
+Ensembles methods
+Introduction to neural networks
+Decision tree models

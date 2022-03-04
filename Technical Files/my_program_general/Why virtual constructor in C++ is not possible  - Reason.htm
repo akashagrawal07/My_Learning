@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/analytics.js"></script><script type="text/javascript" async="" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/recaptcha__en.js"></script><script data-ad-client="ca-pub-4569670309730725" async="" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/adsbygoogle.js"></script>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Why virtual constructor in C++ is not possible? - Reason</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Answer includes reason why virtual constructor in C++ is not possible. By the way there is no concept of C++ virtual constructor. Note that virtual">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why virtual constructor in C++ is not possible? - Reason">
+<meta property="og:description" content="Answer includes reason why virtual constructor in C++ is not possible. By the way there is no concept of C++ virtual constructor. Note that virtual">
+<meta property="og:url" content="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/">
+<meta property="og:site_name" content="Interview Sansar">
+<meta property="article:publisher" content="https://www.facebook.com/Interviewsansar/">
+<meta property="article:tag" content="constructor">
+<meta property="article:tag" content="virtual">
+<meta property="article:tag" content="virtual constrctor">
+<meta property="article:section" content="C++ Advanced">
+<meta property="article:published_time" content="2014-06-11T05:23:00+00:00">
+<meta property="article:modified_time" content="2019-06-21T12:21:59+00:00">
+<meta property="og:updated_time" content="2019-06-21T12:21:59+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Answer includes reason why virtual constructor in C++ is not possible. By the way there is no concept of C++ virtual constructor. Note that virtual">
+<meta name="twitter:title" content="Why virtual constructor in C++ is not possible? - Reason">
+<meta name="twitter:image" content="https://www.interviewsansar.com/wp-content/uploads/2016/10/photo_interviewsansar.png">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.interviewsansar.com/#/schema/person/4ea9c14b87410a05f1f1083baf5caedc","name":"Rakesh Singh","logo":{"@id":"https://www.interviewsansar.com/#personlogo"},"sameAs":[]},{"@type":"WebSite","@id":"https://www.interviewsansar.com/#website","url":"https://www.interviewsansar.com/","name":"Interview Sansar","description":"IT/Software Jobs Interview Preparation Source","publisher":{"@id":"https://www.interviewsansar.com/#/schema/person/4ea9c14b87410a05f1f1083baf5caedc"},"potentialAction":{"@type":"SearchAction","target":"https://www.interviewsansar.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#webpage","url":"https://www.interviewsansar.com/virtual-constructor-in-cplusplus/","inLanguage":"en-US","name":"Why virtual constructor in C++ is not possible? - Reason","isPartOf":{"@id":"https://www.interviewsansar.com/#website"},"datePublished":"2014-06-11T05:23:00+00:00","dateModified":"2019-06-21T12:21:59+00:00","description":"Answer includes reason why virtual constructor in C++ is not possible. By the way there is no concept of C++ virtual constructor. Note that virtual"},{"@type":"Article","@id":"https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#article","isPartOf":{"@id":"https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#webpage"},"author":{"@id":"https://www.interviewsansar.com/#/schema/person/4ea9c14b87410a05f1f1083baf5caedc"},"headline":"Why virtual constructor in C++ is not possible? &#8211; Reason","datePublished":"2014-06-11T05:23:00+00:00","dateModified":"2019-06-21T12:21:59+00:00","commentCount":0,"mainEntityOfPage":{"@id":"https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#webpage"},"publisher":{"@id":"https://www.interviewsansar.com/#/schema/person/4ea9c14b87410a05f1f1083baf5caedc"},"keywords":"constructor,virtual,virtual constrctor","articleSection":"C++ Advanced"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://www.google.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Interview Sansar » Feed" href="https://www.interviewsansar.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Interview Sansar » Comments Feed" href="https://www.interviewsansar.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Interview Sansar » Why virtual constructor in C++ is not possible? – Reason Comments Feed" href="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.interviewsansar.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="generate-style-grid-css" href="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/unsemantic-grid.css" type="text/css" media="all">
+<link rel="stylesheet" id="generate-style-css" href="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/style_003.css" type="text/css" media="all">
+<style id="generate-style-inline-css" type="text/css">
+body{background-color:#efefef;color:#3a3a3a;}a, a:visited{color:#1e73be;}a:hover, a:focus, a:active{color:#00cc77;}body .grid-container{max-width:1270px;}.wp-block-group__inner-container{max-width:1270px;margin-left:auto;margin-right:auto;}body, button, input, select, textarea{font-family:"Palatino Linotype";}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-navigation .main-nav ul ul li a{font-size:14px;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a,.top-bar a:visited{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a,.site-header a:visited{color:#3a3a3a;}.main-title a,.main-title a:hover,.main-title a:visited{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#1e73be;}.main-navigation .main-nav ul li a,.menu-toggle{color:#ffffff;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a{color:#ffffff;background-color:#035a9e;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#035a9e;}.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#035a9e;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a{color:#ffffff;background-color:#035a9e;}.main-navigation ul ul{background-color:#035a9e;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:hover > a,.main-navigation .main-nav ul ul li:focus > a,.main-navigation .main-nav ul ul li.sfHover > a{color:#bbd2e8;background-color:#035a9e;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#bbd2e8;background-color:#035a9e;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{color:#bbd2e8;background-color:#035a9e;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a,.entry-meta a:visited{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#222222;}.site-info a,.site-info a:visited{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.button:visited,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}.generate-back-to-top,.generate-back-to-top:visited{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}.generate-back-to-top:hover,.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}/* End cached CSS */@media (max-width:768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}@font-face {font-family: "GeneratePress";src:  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.eot");src:  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.eot#iefix") format("embedded-opentype"),  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.woff2") format("woff2"),  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.woff") format("woff"),  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.ttf") format("truetype"),  url("https://www.interviewsansar.com/wp-content/themes/generatepress/fonts/generatepress.svg#GeneratePress") format("svg");font-weight: normal;font-style: normal;}
+</style>
+<link rel="stylesheet" id="generate-mobile-style-css" href="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/mobile.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/style.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var sgr_recaptcha = {"site_key":"6Le-3RQUAAAAAP3pFliYQyYAjcQ240NORLigDV2f"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/main.js"></script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/api.js"></script>
+<link rel="https://api.w.org/" href="https://www.interviewsansar.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.interviewsansar.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.interviewsansar.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://www.interviewsansar.com/?p=123">
+<link rel="alternate" type="application/json+oembed" href="https://www.interviewsansar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.interviewsansar.com%2Fvirtual-constructor-in-cplusplus%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.interviewsansar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.interviewsansar.com%2Fvirtual-constructor-in-cplusplus%2F&amp;format=xml">
+<link rel="pingback" href="https://www.interviewsansar.com/xmlrpc.php">
+<meta name="viewport" content="width=device-width, initial-scale=1">		<style type="text/css" id="wp-custom-css">
+			.sidebar .widget,
+.footer-widgets .widget {
+	font-size: 16px;
+}
+.page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 2px 0 0;
+	border: 1px solid #eee;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 2px;
+	font-weight: 600;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+	background: #f9f9f9;
+}
+.page-links a {
+    display: inline-block;
+    border: 1px solid #DDD;
+    padding: 5px 10px;
+    line-height: 1;
+    margin-right: 10px;
+}
+
+.page-links a:hover {
+    background:#222;
+    color: #FFF;
+    border-color: #222;
+}
+		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-123 single-format-standard wp-embed-responsive both-sidebars nav-below-header contained-header one-container active-footer-widgets-2 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope="">
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header id="masthead" class="site-header grid-container grid-parent" itemtype="https://schema.org/WPHeader" itemscope="">
+			<div class="inside-header grid-container grid-parent">
+				<div class="site-branding">
+					<p class="main-title" itemprop="headline">
+				<a href="https://www.interviewsansar.com/" rel="home">
+					Interview Sansar
+				</a>
+			</p>
+					<p class="site-description" itemprop="description">
+				IT/Software Jobs Interview Preparation Source
+			</p>
+				</div>			</div><!-- .inside-header -->
+		</header><!-- #masthead -->
+				<nav id="site-navigation" class="main-navigation grid-container grid-parent" itemtype="https://schema.org/SiteNavigationElement" itemscope="">
+			<div class="inside-navigation grid-container grid-parent">
+				<form method="get" class="search-form navigation-search" action="https://www.interviewsansar.com/">
+				<input type="search" class="search-field" name="s" title="Search">
+			</form>		<div class="mobile-bar-items">
+						<span class="search-item">
+				<a aria-label="Open Search Bar" href="#">
+									</a>
+			</span>
+		</div><!-- .mobile-bar-items -->
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-top-nav-bar-is" class=" menu sf-menu"><li id="menu-item-1830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-1830"><a href="https://www.interviewsansar.com/">Technical Interview Q&amp;A<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1786"><a href="https://www.interviewsansar.com/cpp-interview-questions/">C++ interview questions</a></li>
+	<li id="menu-item-1791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1791"><a href="https://www.interviewsansar.com/csharp-interview-questions/">C# interview questions</a></li>
+	<li id="menu-item-5190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5190"><a href="https://www.interviewsansar.com/questions-for-java-interview/">Java Interview Questions</a></li>
+	<li id="menu-item-1747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1747"><a href="https://www.interviewsansar.com/short-interview-qa/">Short Interview Q&amp;A</a></li>
+	<li id="menu-item-3003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3003"><a href="https://www.interviewsansar.com/behavioural-hr-interview-questions/">Behavioural / HR Interview</a></li>
+</ul>
+</li>
+<li id="menu-item-1769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1769"><a href="https://www.interviewsansar.com/programming/">Programming Q&amp;A<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1782"><a href="https://www.interviewsansar.com/programming/csharp-programming-interview-questions-asked-industries/">C# Programming Interview Q&amp;A</a></li>
+	<li id="menu-item-1781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1781"><a href="https://www.interviewsansar.com/programming/c-programming-interview-questions-asked-industries/">C++ Programming Interview Q&amp;A</a></li>
+</ul>
+</li>
+<li id="menu-item-2080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2080"><a href="https://www.interviewsansar.com/mcqs/">MCQs<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151"><a href="https://www.interviewsansar.com/mcqs/cpp/">C++</a></li>
+	<li id="menu-item-2154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2154"><a href="https://www.interviewsansar.com/mcqs/datastructure-algorithms/">Data Structure-Algorithms</a></li>
+	<li id="menu-item-2086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2086"><a href="https://www.interviewsansar.com/mcqs/sql/">SQL</a></li>
+	<li id="menu-item-2107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2107"><a href="https://www.interviewsansar.com/mcqs/java/">JAVA</a></li>
+</ul>
+</li>
+<li id="menu-item-5145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5145"><a href="https://www.interviewsansar.com/programming-examples-c-cpp-csharp-java/">Programming Examples<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-5147" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5147"><a href="https://www.interviewsansar.com/category/c-programming-examples/">C Programming Examples</a></li>
+	<li id="menu-item-5148" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5148"><a href="https://www.interviewsansar.com/category/cpp-programming-examples/">C++ Programming Examples</a></li>
+	<li id="menu-item-5149" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5149"><a href="https://www.interviewsansar.com/category/csharp-programming-examples/">C# Programming Examples</a></li>
+	<li id="menu-item-5151" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5151"><a href="https://www.interviewsansar.com/category/sql/">SQL Examples</a></li>
+	<li id="menu-item-5150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5150"><a href="https://www.interviewsansar.com/category/oracle-pl-sql/">Oracle PL SQL Examples</a></li>
+	<li id="menu-item-5267" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5267"><a href="https://www.interviewsansar.com/category/java-script/">Java Script</a></li>
+</ul>
+</li>
+<li id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1744"><a href="https://www.interviewsansar.com/about/">About<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1826"><a href="https://www.interviewsansar.com/home/">Why Visit</a></li>
+	<li id="menu-item-1745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1745"><a href="https://www.interviewsansar.com/sitemap/">Sitemap</a></li>
+	<li id="menu-item-1746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1746"><a href="https://www.interviewsansar.com/your-feedback/">Your Feedback</a></li>
+	<li id="menu-item-4033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4033"><a href="https://www.interviewsansar.com/contact-us/">Contact Us</a></li>
+	<li id="menu-item-3300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3300"><a href="https://www.interviewsansar.com/search-jobs/">Search jobs</a></li>
+	<li id="menu-item-4132" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4132"><a href="https://www.interviewsansar.com/category/e-author/">e-author</a></li>
+</ul>
+</li>
+<li class="search-item"><a aria-label="Open Search Bar" href="#"></a></li></ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+		
+	<div id="page" class="hfeed site grid-container container grid-parent">
+				<div id="content" class="site-content">
+			
+	<div id="primary" class="content-area grid-parent mobile-grid-100 push-25 grid-50 tablet-push-25 tablet-grid-50">
+		<main id="main" class="site-main">
+			
+<article id="post-123" class="post-123 post type-post status-publish format-standard hentry category-cplusplus-advanced-interview-questions-and-answers tag-constructor tag-virtual tag-virtual-constrctor" itemtype="https://schema.org/CreativeWork" itemscope="">
+	<div class="inside-article">
+		
+		<header class="entry-header">
+			<h1 class="entry-title" itemprop="headline">Why virtual constructor in C++ is not possible? – Reason</h1>			<div class="entry-meta">
+				<span class="posted-on"><a href="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/" title="5:23 am" rel="bookmark"><time class="updated" datetime="2019-06-21T17:51:59+05:30" itemprop="dateModified">June 21, 2019</time><time class="entry-date published" datetime="2014-06-11T05:23:00+05:30" itemprop="datePublished">June 11, 2014</time></a></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope=""><a class="url fn n" href="https://www.interviewsansar.com/author/rakeshsingh/" title="View all posts by Rakesh Singh" rel="author" itemprop="url"><span class="author-name" itemprop="name">Rakesh Singh</span></a></span></span> 			</div><!-- .entry-meta -->
+				</header><!-- .entry-header -->
+
+		
+		<div class="entry-content" itemprop="text">
+			<span style="font-style:italic; font-weight:bold;text-align:center;">(Last Updated On: June 21, 2019)</span><p>Answer
+ includes reason why virtual constructor in C++ is not possible. By the 
+way there is no concept of C++ virtual constructor.</p>
+<p>Note that virtual constructor is frequently asked interview question 
+and we need to provide the reason that why there is not concept of 
+virtual constructor. Also, don’t forget to specify that Factory Method 
+Design Pattern is also known as virtual constructor in Object oriented 
+design. So, virtual constructor in c++ and factory method design pattern
+ both are different concept.<strong><br>
+</strong></p>
+<p>Also not that,&nbsp; there is a <a href="https://www.interviewsansar.com/2014/06/11/cplusplus-virtual-destructor-and-use-of-virtual-destructor/">concept of virtual destructor in c++ programming</a>.</p>
+<p><strong>Answer: </strong>First of all, we don’t have provision of 
+virtual constructor in C++. Having a virtual constructor is meaningless 
+as we cannot override the constructor of a class. So, making constructor
+ virtual has no meaning.</p>
+<pre>class A{
+public:
+	//Constructor
+	A(){} 
+	// virtual A(){} : This is wrong and no meaning of
+	//making constructor vertual as it cannot be overrided
+	//in child class
+
+}
+class B:public A{
+	//Cannot override base class constructor
+	A(){}//This is not possible
+
+}
+</pre>
+<p>Secondly, the compiler generates hidden code in the constructor of 
+each class containing virtual methods to initialize the VPTR of its 
+objects to the address of the corresponding VTABLE. Means, <strong>constructor is responsible to assign the address of classes VTALBE into VPTR</strong>.</p>
+<p>So, it is pretty clear that at the time, when constructor is invoked,
+ the virtual table would not be available to lookup virtual constructor 
+address in the VTABLE. So, it doesn’t make sense to have virtual 
+constructor.</p>
+<p><span style="color: #0000ff;"><strong>NOTE</strong><strong>: </strong></span></p>
+<ol>
+<li>When we precede the constructor with virtual keyword to make 
+constructor virtula, compiler will flash below error. We can use only 
+inline or explicit keyword with constructor.</li>
+</ol>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </em><span style="color: #ff0000;"><strong>Error: </strong><em>‘inline’ is the only legal storage class for constructors</em></span><em><span style="color: #ff0000;">&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </em></p>
+<ol start="2">
+<li>In C++ concept, there is no virtual constructor. In OOD(Object 
+Oriented Design), the “factory method” design pattern is also known as 
+virtual constructor.</li>
+</ol>
+		</div><!-- .entry-content -->
+		<hr>
+		<div class="crp_related  "><h3>Related Posts:</h3><ul><li><a href="https://www.interviewsansar.com/can-use-this-pointer-static-member-function-cpp-program/"><span class="crp_title">Can we use THIS Pointer in static function - Reason in C++?</span></a></li><li><a href="https://www.interviewsansar.com/cplusplus-virtual-destructor-and-use-of-virtual-destructor/"><span class="crp_title">What is virtual destructor in C++? Why do we need…</span></a></li><li><a href="https://www.interviewsansar.com/virtual-method-in-c-sharp/"><span class="crp_title">Virtual method in C Sharp</span></a></li><li><a href="https://www.interviewsansar.com/mcq-virtual-concepts-c-pp-function/"><span class="crp_title">MCQs – C++ Virtual Concepts</span></a></li><li><a href="https://www.interviewsansar.com/what-is-virtual-method-and-why-do-you-use-in-c/"><span class="crp_title">What is virtual method in C# language and why do you use it?</span></a></li></ul><div class="crp_clear"></div></div>		<hr>
+					<footer class="entry-meta">
+				<span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://www.interviewsansar.com/category/cplusplus-advanced-interview-questions-and-answers/" rel="category tag">C++ Advanced</a></span> <span class="tags-links"><span class="screen-reader-text">Tags </span><a href="https://www.interviewsansar.com/tag/constructor/" rel="tag">constructor</a>, <a href="https://www.interviewsansar.com/tag/virtual/" rel="tag">virtual</a>, <a href="https://www.interviewsansar.com/tag/virtual-constrctor/" rel="tag">virtual constrctor</a></span> <span class="comments-link"><a href="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#respond">Leave a comment</a></span> 		<nav id="nav-below" class="post-navigation">
+			<span class="screen-reader-text">Post navigation</span>
+
+			<div class="nav-previous"><span class="prev" title="Previous"><a href="https://www.interviewsansar.com/cplusplus-virtual-destructor-and-use-of-virtual-destructor/" rel="prev">What is virtual destructor in C++? Why do we need virtual desturctor?</a></span></div><div class="nav-next"><span class="next" title="Next"><a href="https://www.interviewsansar.com/how-to-create-threads-in-java/" rel="next">How many ways we can create a thread in Java? Explain with pseudo code.</a></span></div>		</nav><!-- #nav-below -->
+					</footer><!-- .entry-meta -->
+			</div><!-- .inside-article -->
+</article><!-- #post-## -->
+
+					<div class="comments-area">
+						<div id="comments">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.interviewsansar.com/virtual-constructor-in-cplusplus/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.interviewsansar.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" size="30">
+<label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" size="30">
+<label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" size="30">
+<div class="sgr-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/anchor.htm" role="presentation" name="a-92ab954jy9z2" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="123" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+					</div>
+
+							</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="left-sidebar" class="widget-area grid-25 tablet-grid-25 mobile-grid-100 grid-parent sidebar pull-50 tablet-pull-50" itemtype="https://schema.org/WPSideBar" itemscope="">
+	<div class="inside-left-sidebar">
+		<aside id="text-57" class="widget inner-padding widget_text">			<div class="textwidget"><p><a href="https://www.interviewsansar.com/object-oriented-programming-questions/" target="_blank" rel="noopener noreferrer">OOPs Concepts CHALLENGE</a><br>
+<a href="https://www.interviewsansar.com/2019/12/13/oop-concepts-booster/" target="_blank" rel="noopener noreferrer">OOP Concepts Booster</a></p>
+</div>
+		</aside><aside id="nav_menu-9" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">C/C++ Interview Questions</h2><div class="menu-menu-c-cpp-interview-qa-container"><ul id="menu-menu-c-cpp-interview-qa" class="menu"><li id="menu-item-2204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2204"><a href="https://www.interviewsansar.com/category/c-interview-questions-and-answers/">C</a></li>
+<li id="menu-item-2206" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2206"><a href="https://www.interviewsansar.com/category/cpp-basic-interview-questions-and-answers/">C++ Basic</a></li>
+<li id="menu-item-2205" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2205"><a href="https://www.interviewsansar.com/category/cplusplus-advanced-interview-questions-and-answers/">C++ Advanced</a></li>
+<li id="menu-item-2207" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2207"><a href="https://www.interviewsansar.com/category/cpp-programming-interview-questions-and-answers/">C++ Programming</a></li>
+</ul></div></aside><aside id="nav_menu-10" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">C# Interview Questions</h2><div class="menu-menu-csharp-interview-qa-container"><ul id="menu-menu-csharp-interview-qa" class="menu"><li id="menu-item-2212" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2212"><a href="https://www.interviewsansar.com/category/csharp-basic-interview-questions-and-answers/">C# Basic</a></li>
+<li id="menu-item-2211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2211"><a href="https://www.interviewsansar.com/category/csharp-advanced-interview-questions-and-answers/">C# Advanced</a></li>
+<li id="menu-item-2213" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2213"><a href="https://www.interviewsansar.com/category/csharp-muli-threading-interview-questions-and-answers/">C# Multi-threading</a></li>
+<li id="menu-item-2214" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2214"><a href="https://www.interviewsansar.com/category/csharp-programming-interview-questions-and-answers/">C# Programming</a></li>
+<li id="menu-item-2490" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2490"><a href="https://www.interviewsansar.com/category/programming-exercises-with-solutions/c-programming-exercises/">C# program exercises</a></li>
+</ul></div></aside><aside id="nav_menu-11" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Java Interview Questions</h2><div class="menu-menu-java-interview-qa-container"><ul id="menu-menu-java-interview-qa" class="menu"><li id="menu-item-2208" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2208"><a href="https://www.interviewsansar.com/category/java-interview-questions-and-answers/">Core Java</a></li>
+<li id="menu-item-2209" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2209"><a href="https://www.interviewsansar.com/category/java-collections-interview-questions-and-answers/">Java Collections</a></li>
+<li id="menu-item-2210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2210"><a href="https://www.interviewsansar.com/category/java-multithreading-interview-questions-and-answers/">Java Multithreading</a></li>
+<li id="menu-item-3411" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3411"><a title="Java notes" href="https://www.interviewsansar.com/category/notes-java-programming/">Java Notes</a></li>
+<li id="menu-item-4202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4202"><a href="https://www.interviewsansar.com/java-tutorial/">Java Tutorial</a></li>
+</ul></div></aside><aside id="nav_menu-12" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Multiple Choice Questions</h2><div class="menu-menu-mcqs-interview-qa-container"><ul id="menu-menu-mcqs-interview-qa" class="menu"><li id="menu-item-2215" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2215"><a href="https://www.interviewsansar.com/category/mcq-cplusplus-multiple-choice-questions/">MCQ-C++</a></li>
+<li id="menu-item-2216" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2216"><a href="https://www.interviewsansar.com/category/mcq-java-multiple-choice-questions/">MCQ-Java</a></li>
+<li id="menu-item-2217" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2217"><a href="https://www.interviewsansar.com/category/mcq-sql-multiple-choice-questions/">MCQ-SQL</a></li>
+<li id="menu-item-2218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2218"><a href="https://www.interviewsansar.com/category/mcqs-algorithms-datastructure/">MCQs Algorithms and Data Structure</a></li>
+</ul></div></aside><aside id="nav_menu-13" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Others</h2><div class="menu-menu-others-interview-qa-container"><ul id="menu-menu-others-interview-qa" class="menu"><li id="menu-item-2751" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2751"><a href="https://www.interviewsansar.com/category/notes-c-programming/">C NOTES</a></li>
+<li id="menu-item-2223" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2223"><a href="https://www.interviewsansar.com/category/sql-database-interview-questions-answers/">SQL Database</a></li>
+<li id="menu-item-2219" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2219"><a href="https://www.interviewsansar.com/category/design-patterns-and-principles-interview-questions-and-answers/">Design Patterns and Principles</a></li>
+<li id="menu-item-2222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2222"><a href="https://www.interviewsansar.com/category/networking-general-interview-questions-and-answers/">Networking General</a></li>
+<li id="menu-item-2224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2224"><a href="https://www.interviewsansar.com/category/uml-diagrams-interview-questions-and-answers/">UML Diagram</a></li>
+<li id="menu-item-2221" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2221"><a href="https://www.interviewsansar.com/category/interview-puzzles/mathematical-interview-puzzles/">Mathematical Puzzles</a></li>
+</ul></div></aside><aside id="text-62" class="widget inner-padding widget_text">			<div class="textwidget"><p><span style="color: red; font-weight: bold;">Ready to Boost Your OOPs Concepts Blazing Fast &amp; Take Your Coding Skills to the Next Level?</span></p>
+<p><a href="https://www.interviewsansar.com/oop-concepts-booster/" target="_blank" rel="noopener noreferrer">Click here to read more</a></p>
+<p><a href="https://www.interviewsansar.com/oop-concepts-booster/" target="_blank" rel="noopener noreferrer"><img class="size-full wp-image-5574 aligncenter" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/img-oops-small.jpg" alt="Book: OOPs Concepts" width="201" height="298"></a></p>
+</div>
+		</aside>	</div><!-- .inside-left-sidebar -->
+</div><!-- #secondary -->
+<div id="right-sidebar" class="widget-area grid-25 tablet-grid-25 grid-parent sidebar" itemtype="https://schema.org/WPSideBar" itemscope="">
+	<div class="inside-right-sidebar">
+		<aside id="text-41" class="widget inner-padding widget_text"><h2 class="widget-title">Author</h2>			<div class="textwidget"><p>Rakesh Singh is a highly experienced IT professional &amp; International Published Author…<a href="https://www.interviewsansar.com/about/" target="_blank" rel="noopener noreferrer">Read more</a></p>
+</div>
+		</aside><aside id="text-49" class="widget inner-padding widget_text">			<div class="textwidget"><p><script async="" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/adsbygoogle.js"></script><br>
+<!-- ad-respo --><br>
+<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-4569670309730725" data-ad-slot="1986853297" data-ad-format="auto" data-full-width-responsive="true"></ins><br>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+</div>
+		</aside>		<aside id="recent-posts-6" class="widget inner-padding widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://www.interviewsansar.com/c-exercise-on-constructor-with-solution/">C# Exercise – On Constructor with Solution</a>
+									</li>
+											<li>
+					<a href="https://www.interviewsansar.com/share-arraylist-between-classes-in-c-with-code/">Share ArrayList Between Classes in c# with Code</a>
+									</li>
+											<li>
+					<a href="https://www.interviewsansar.com/how-to-compare-two-arrays-in-c-if-they-are-equal-or-not/">How to compare two arrays in C# if they are Equal or Not.</a>
+									</li>
+											<li>
+					<a href="https://www.interviewsansar.com/compare-two-arrays-in-java-equal-or-not/">How to compare two arrays in Java if they are Equal or Not</a>
+									</li>
+											<li>
+					<a href="https://www.interviewsansar.com/cpp-oops-copy-constructor/">C++ OOPs: Copy Constructor with Calling and Important Points</a>
+									</li>
+					</ul>
+		</aside>	</div><!-- .inside-right-sidebar -->
+</div><!-- #secondary -->
+
+	</div><!-- #content -->
+</div><!-- #page -->
+
+
+<div class="site-footer grid-container grid-parent footer-bar-active footer-bar-align-center">
+				<div id="footer-widgets" class="site footer-widgets">
+				<div class="footer-widgets-container grid-container grid-parent">
+					<div class="inside-footer-widgets">
+							<div class="footer-widget-1 grid-parent grid-50 tablet-grid-50 mobile-grid-100">
+			</div>
+		<div class="footer-widget-2 grid-parent grid-50 tablet-grid-50 mobile-grid-100">
+		<aside id="text-61" class="widget inner-padding widget_text">			<div class="textwidget"><p><strong>Get latest Article in your Email!</strong></p>
+<hr>
+<div style="text-align: center;"><a href="https://feedburner.google.com/fb/a/mailverify?uri=Interviewsansar" target="_blank" rel="noopener noreferrer"><span style="text-decoration: underline;"><strong><span style="color: #3366ff; text-decoration: underline;">SUBSCRIBE</span></strong></span></a></div>
+<hr>
+</div>
+		</aside>	</div>
+						</div>
+				</div>
+			</div>
+				<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope="">
+			<div class="inside-site-info grid-container grid-parent">
+						<div class="footer-bar">
+			<aside id="text-55" class="widget inner-padding widget_text">			<div class="textwidget"><p><a href="https://www.interviewsansar.com/privacy-policy-interviewsansar/" target="_blank" rel="noopener noreferrer"><em>private policy</em></a></p>
+</div>
+		</aside>		</div>
+						<div class="copyright-bar">
+					<span class="copyright">© 2020 Interview Sansar</span> • Powered by <a href="https://generatepress.com/" itemprop="url">GeneratePress</a>				</div>
+			</div>
+		</footer><!-- .site-info -->
+		</div><!-- .site-footer -->
+
+<script type="text/javascript">
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideToggle';
+var colomatpauseInit = '2';
+var colomattouchstart = '';
+</script><!--[if lte IE 11]>
+<script type='text/javascript' src='https://www.interviewsansar.com/wp-content/themes/generatepress/js/classList.min.js'></script>
+<![endif]-->
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/menu.js"></script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/a11y.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var generatepressNavSearch = {"open":"Open Search Bar","close":"Close Search Bar"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/navigation-search.js"></script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/comment-reply.js"></script>
+<script type="text/javascript" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/wp-embed.js"></script>
+<script async="" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53666636-1');
+</script>
+
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="Why%20virtual%20constructor%20in%20C++%20is%20not%20possible%20%20-%20Reason_files/bframe.htm" style="width: 100%; height: 100%;" name="c-92ab954jy9z2" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div></body></html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced 
+Database Caching 56/73 queries in 0.028 seconds using disk
+
+Served from: www.interviewsansar.com @ 2020-02-15 11:04:42 by W3 Total Cache
+-->
