@@ -1,0 +1,14 @@
+Learning objectives
+Working with Jupyter notebooks
+Using code cells
+Extensions to the Python language
+Markdown cells
+Editing notebooks
+NumPy basics
+Broadcasting, array operations, and ufuncs
+Pandas
+Conda
+Folium and Geo
+Machine learning with scikit-learn
+Plotting with matplotlib and bokeh
+Branching into Numba, Cython, deep learning, and NLP
