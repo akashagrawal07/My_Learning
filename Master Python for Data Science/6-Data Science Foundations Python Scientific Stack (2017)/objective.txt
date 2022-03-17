@@ -12,3 +12,8 @@ Folium and Geo
 Machine learning with scikit-learn
 Plotting with matplotlib and bokeh
 Branching into Numba, Cython, deep learning, and NLP
+
+
+
+
+https://scikit-learn.org/stable/tutorial/machine_learning_map/
