@@ -1,0 +1,14 @@
+Log Analysis
+	- Extract log find MFPAPI related logs (eapi*)
+	- Differentiate AppId wiselog
+	- Find Error Statement by finding "ERR"
+		- Need to extract time
+		- Need to extract file name
+		- Need to extract the debug statement
+	- Need to compare the Code and Log for that we need to create some model
+	- create squence from from logs.
+	- Find the error in squence in logs.
+	
+	
+	
+	fzqbpgorhaifxueccm@bvhrs.com

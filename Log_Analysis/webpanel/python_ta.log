@@ -1,0 +1,58 @@
+10/06 14:23:02781 Pid= 4618 Tid= 4127991616 __init__.py	21 ERROR DEBUG_LEVEL:3
+10/06 23:24:51817 Pid= 2108 Tid= 4127831872 __init__.py	21 ERROR DEBUG_LEVEL:3
+10/06 15:32:44837 Pid= 2071 Tid= 4128565056 __init__.py	21 ERROR DEBUG_LEVEL:3
+10/06 15:36:51644 Pid= 2071 Tid= 4128196416 __init__.py	19 DEBUG logging test in server
+10/06 15:36:51646 Pid= 2071 Tid= 4128196416 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/06 15:36:51918 Pid= 2071 Tid= 4128196416 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/06 15:36:51919 Pid= 2071 Tid= 4128196416 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/06 15:36:59551 Pid= 2071 Tid= 4128196416 tweens.py	20 INFO web_panel_tween_factory
+10/08 15:02:04637 Pid= 2074 Tid= 4128233280 __init__.py	19 DEBUG logging test in server
+10/08 15:02:04639 Pid= 2074 Tid= 4128233280 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 15:02:04929 Pid= 2074 Tid= 4128233280 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 15:02:04932 Pid= 2074 Tid= 4128233280 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 15:02:13323 Pid= 2074 Tid= 4128233280 tweens.py	20 INFO web_panel_tween_factory
+10/08 15:19:28880 Pid= 2077 Tid= 4128122688 __init__.py	19 DEBUG logging test in server
+10/08 15:19:28883 Pid= 2077 Tid= 4128122688 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 15:19:29168 Pid= 2077 Tid= 4128122688 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 15:19:29169 Pid= 2077 Tid= 4128122688 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 15:19:37510 Pid= 2077 Tid= 4128122688 tweens.py	20 INFO web_panel_tween_factory
+10/08 15:31:46750 Pid= 2074 Tid= 4128061248 __init__.py	19 DEBUG logging test in server
+10/08 15:31:46752 Pid= 2074 Tid= 4128061248 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 15:31:47046 Pid= 2074 Tid= 4128061248 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 15:31:47048 Pid= 2074 Tid= 4128061248 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 15:31:55228 Pid= 2074 Tid= 4128061248 tweens.py	20 INFO web_panel_tween_factory
+10/08 16:06:50678 Pid= 2076 Tid= 4128212800 __init__.py	19 DEBUG logging test in server
+10/08 16:06:50684 Pid= 2076 Tid= 4128212800 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 16:06:51013 Pid= 2076 Tid= 4128212800 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 16:06:51015 Pid= 2076 Tid= 4128212800 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 16:06:59115 Pid= 2076 Tid= 4128212800 tweens.py	20 INFO web_panel_tween_factory
+10/08 16:46:55856 Pid= 2142 Tid= 4128364352 __init__.py	19 DEBUG logging test in server
+10/08 16:46:55862 Pid= 2142 Tid= 4128364352 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 16:46:56174 Pid= 2142 Tid= 4128364352 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 16:46:56176 Pid= 2142 Tid= 4128364352 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 16:47:03703 Pid= 2142 Tid= 4128364352 tweens.py	20 INFO web_panel_tween_factory
+10/08 16:48:51080 Pid= 2116 Tid= 4127590208 __init__.py	19 DEBUG logging test in server
+10/08 16:48:51082 Pid= 2116 Tid= 4127590208 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 16:48:51423 Pid= 2116 Tid= 4127590208 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 16:48:51423 Pid= 2116 Tid= 4127590208 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 16:48:59083 Pid= 2116 Tid= 4127590208 tweens.py	20 INFO web_panel_tween_factory
+10/08 21:13:25734 Pid= 2142 Tid= 4128196416 __init__.py	19 DEBUG logging test in server
+10/08 21:13:25735 Pid= 2142 Tid= 4128196416 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 21:13:26024 Pid= 2142 Tid= 4128196416 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 21:13:26025 Pid= 2142 Tid= 4128196416 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 21:13:34030 Pid= 2142 Tid= 4128196416 tweens.py	20 INFO web_panel_tween_factory
+10/08 21:25:25874 Pid= 2190 Tid= 4128233280 __init__.py	19 DEBUG logging test in server
+10/08 21:25:25880 Pid= 2190 Tid= 4128233280 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 21:25:26214 Pid= 2190 Tid= 4128233280 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 21:25:26215 Pid= 2190 Tid= 4128233280 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 21:25:34490 Pid= 2190 Tid= 4128233280 tweens.py	20 INFO web_panel_tween_factory
+10/08 21:26:44562 Pid= 2078 Tid= 4128552768 __init__.py	19 DEBUG logging test in server
+10/08 21:26:44562 Pid= 2078 Tid= 4128552768 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 21:26:44884 Pid= 2078 Tid= 4128552768 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 21:26:44884 Pid= 2078 Tid= 4128552768 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 21:26:53281 Pid= 2078 Tid= 4128552768 tweens.py	20 INFO web_panel_tween_factory
+10/08 21:39:41591 Pid= 2154 Tid= 4128155456 __init__.py	19 DEBUG logging test in server
+10/08 21:39:41592 Pid= 2154 Tid= 4128155456 __init__.py	21 ERROR DEBUG_LEVEL:255
+10/08 21:39:41909 Pid= 2154 Tid= 4128155456 sessionmanagementmodel.py	25 INFO init sessionmanagerbase
+10/08 21:39:41909 Pid= 2154 Tid= 4128155456 sessionmanagementmodel.py	160 INFO CreateSessionManagerBase
+10/08 21:39:49958 Pid= 2154 Tid= 4128155456 tweens.py	20 INFO web_panel_tween_factory
